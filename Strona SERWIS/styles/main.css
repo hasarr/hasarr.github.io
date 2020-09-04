@@ -1,0 +1,203 @@
+
+main
+{
+	width:100%;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+
+	background-color: #f1f1f1;
+}
+
+main .images
+{
+	width:100%;
+	background-size: cover;
+	background-position: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1 0 auto;
+	cursor: default;
+	min-height:92vh;
+}
+main #mainSite
+{
+	background-image: url("../images/laptop.jpg");
+	min-height: 100vh;
+}
+main #about
+{
+	background-image: url("../images/office.jpg");
+
+}
+
+#mainSite h1
+{
+	margin-top: 100px;
+}
+main #contact
+{
+	font-family: oswaldregular;
+	width:100%;
+	background-color: #2e2e2e;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+
+	flex-direction: column;
+}
+
+main #contact a
+{
+	font-size: 2em;
+	text-decoration: none;
+	color:white;
+}
+h1,h2
+{
+	color:white;
+	cursor:default;
+	font-family: oswaldregular;
+}
+
+main #services
+{
+	background-image: url("../images/repair_bench.jpg");
+}
+main #servicesWebsite
+{
+
+	background-image: url("../images/html_background.jpg");
+}
+
+
+.welcomeText
+{
+
+	font-family: oswaldregular, sans-serif;
+	color: #e8e8e8;
+	font-size: 3.5em;
+	line-height:70px;
+	width:60%;
+	text-align: center;
+}
+.textDescription
+{
+	color:#d6d6d6;
+	font-family: oswaldregular, sans-serif;
+	font-size:2em;
+	padding: 0 5% 0 5%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.primaryColor{
+	color:#4ce659;
+}
+.secondColor
+{
+	color: #4ce659;
+
+}
+#servicesList{
+	list-style-type:disc;
+	font-family: oswaldregular;
+	font-size: 1em;
+	color:#d1d1d1;
+}
+#servicesList a
+{
+	text-decoration: none;
+}
+#servicesList li:last-child{
+	color:#37c429;
+	list-style-type: none;
+	font-size:2.4em;
+	cursor: pointer;
+}
+
+#servicesList li:last-child::after{
+	content:"";
+	width: 1.2em;
+	height: 1.2em;
+	background-size: 1.2em 1.2em;
+	background-image: url("../images/arrow.png");
+	display: inline-block;
+	position: relative;
+	top:10px;
+}
+#servicesList li:last-child:hover::after{
+	will-change: transform;
+	animation: arrowAnimation 1s infinite;
+}
+#goDown
+{
+	cursor: pointer;
+	color:#a8a7a7;
+	text-decoration: none;
+	font-family: oswaldregular, sans-serif;
+	font-size:2em;
+	padding: 0 5% 0 5%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#goDown::after
+{
+	content:"";
+	width: 1.2em;
+	height: 1.2em;
+	background-size: 1.2em 1.2em;
+	background-image: url("../images/arrow.png");
+	display: inline-block;
+	position: relative;
+	top:10px;
+}
+
+#goDown:hover::after
+{
+	will-change: transform;
+	animation: arrowAnimation 1s infinite;
+
+}
+.contactHref
+{
+	text-decoration: none;
+	color:#37c429;
+	font-size: 2em;
+	font-family: oswaldregular;
+}
+.contactHref::after
+{
+	content:"";
+	width: 1.2em;
+	height: 1.2em;
+	background-size: 1.2em 1.2em;
+	background-image: url("../images/arrow.png");
+	display: inline-block;
+	position: relative;
+	top:10px;
+}
+.contactHref:hover::after
+{
+	will-change: transform;
+	animation: arrowAnimation 1s infinite;
+}
+
+@keyframes arrowAnimation {
+	0%{bottom:15px;}
+	50%{top:15px;}
+	100%{bottom:15px;}
+}
