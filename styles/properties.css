@@ -29,6 +29,6 @@ body
 }
 *::selection
 {
-	color:blue;
+	color:#FFFF00;
 	background-color: white;
 }
