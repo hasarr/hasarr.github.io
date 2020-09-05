@@ -1,5 +1,5 @@
 function headerCheck() {
-    if(window.scrollY>50)
+    if(window.scrollY>10)
     {
         document.getElementById('header').classList.add("active");
         document.getElementById('dropList').classList.add("active");

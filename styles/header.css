@@ -48,7 +48,7 @@ header  #headerLogo:hover
 /*-----------------------------------------------------------*/
 /*--------------------------MOBILE MENU----------------------*/
 /*-----------------------------------------------------------*/
-header > #mobileMenuIcon
+.mobileMenuIcon
 {
 	width:70px;
 	height:70px;
@@ -57,13 +57,14 @@ header > #mobileMenuIcon
 	overflow: hidden;
 	border-radius: 10px;
 }
-#mobileMenuIcon:hover
+.mobileMenuIcon:hover
 {
 	overflow: hidden;
 	background-color: white;
 	content: url("../images/mobileMenuIconDark.png")
 }
-#mobileMenu
+
+.mobileMenu
 {
 	z-index: 1;
 	padding: 0;
@@ -73,8 +74,18 @@ header > #mobileMenuIcon
 	margin-top: 100px;
 	position: fixed;
 	opacity: .96;
+	transition: all .7s ease-out;
+	-webkit-clip-path: circle(0);
+	clip-path: circle(0);
 }
-#mobileMenu ul
+.mobileMenu.open
+{
+
+	-webkit-clip-path: circle(100%);
+	clip-path: circle(100%);
+}
+
+.mobileMenu ul
 {
 	list-style-type: none;
 	font-size: 1.5em;
@@ -91,25 +102,25 @@ header > #mobileMenuIcon
 	flex-direction: column;
 	flex: 1 0 auto;
 }
-#mobileMenu ul a
+.mobileMenu ul a
 {
 	text-decoration: none;
 	color:white;
 }
-#mobileMenu ul .mobileListElement
+.mobileMenu ul .mobileListElement
 {
 	box-sizing:border-box;
 	line-height: 200%;
 	position: relative;
 	font-size:30px;
 }
-#mobileMenu ul .mobileListElement:nth-child(2) a
+.mobileMenu ul .mobileListElement:nth-child(2) a
 {
 
 	position: relative;
 	left:13px;
 }
-#mobileMenu ul .mobileListElement:nth-child(2)::after
+.mobileMenu ul .mobileListElement:nth-child(2)::after
 {
 	content:"";
 	width:1em;
@@ -120,15 +131,15 @@ header > #mobileMenuIcon
 	position: relative;
 	left:8px;
 }
-#mobileMenu ul .mobileListElement:nth-child(2):hover::after
+.mobileMenu ul .mobileListElement:nth-child(2):hover::after
 {
 	background-image: url("../images/downward_arrow_dark.png");
 }
-#mobileMenu ul .mobileListElement:hover a
+.mobileMenu ul .mobileListElement:hover a
 {
 	color:black;
 }
-#mobileMenu ul .mobileListElement:hover
+.mobileMenu ul .mobileListElement:hover
 {
 	background-color: white;
 	color:black;
@@ -145,6 +156,10 @@ header > #mobileMenuIcon
 	font-size:0.6em;
 	background-color: #121212;
 }
+#mobileDropList li:hover
+{
+	background-color: white;
+}
 /*-----------------------------------------------------------*/
 /*--------------------HIDE DESKTOP MENU----------------------*/
 /*-----------------------------------------------------------*/
@@ -152,10 +167,6 @@ header > nav > .desktopMenu
 {
 	display: none;
 }
-
-
-
-
 
 
 /*-----------------------------------------------------------*/
@@ -167,11 +178,15 @@ header > nav > .desktopMenu
 	/*--------------------HIDE MOBILE MENU----------------------*/
 	/*-----------------------------------------------------------*/
 
-	#mobileMenuIcon
+	.mobileMenuIcon
 	{
 		display: none;
 	}
-	#mobileMenu
+	.mobileMenu
+	{
+		display: none;
+	}
+	.mobileMenu.open
 	{
 		display: none;
 	}
