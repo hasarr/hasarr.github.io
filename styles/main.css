@@ -57,7 +57,7 @@ main #contact
 	align-items: center;
 	justify-content: center;
 	text-shadow: 2px 2px black;
-	flex-direction: column;
+	flex-direction: column; 
 }
 
 main #contact a
