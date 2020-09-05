@@ -34,7 +34,7 @@ header > #headerLogo
 	font-family: oswaldregular, sans-serif ;
 	cursor: pointer;
 	color: #696969;
-	font-size:2.8em;
+	font-size:2em;
 	overflow:visible;
 	margin-left:1%;
 	text-decoration: none;
@@ -101,7 +101,7 @@ header > #mobileMenuIcon
 	box-sizing:border-box;
 	line-height: 200%;
 	position: relative;
-	font-size:50px;
+	font-size:30px;
 }
 #mobileMenu ul .mobileListElement:nth-child(2) a
 {
@@ -156,16 +156,7 @@ header > nav > .desktopMenu
 
 
 
-/*-----------------------------------------------------------*/
-/*--------------------HIDE LOGO------------------------------*/
-/*-----------------------------------------------------------*/
-@media screen and (max-width:337px)
-{
-	#headerLogo
-	{
-		display: none;
-	}
-}
+
 
 /*-----------------------------------------------------------*/
 /*--------------------DESKTOP VERSION----------------------*/
@@ -175,6 +166,7 @@ header > nav > .desktopMenu
 	/*-----------------------------------------------------------*/
 	/*--------------------HIDE MOBILE MENU----------------------*/
 	/*-----------------------------------------------------------*/
+
 	#mobileMenuIcon
 	{
 		display: none;
@@ -190,6 +182,10 @@ header > nav > .desktopMenu
 	/*-----------------------------------------------------------*/
 	/*----------------------DESKTOP MENU-------------------------*/
 	/*-----------------------------------------------------------*/
+	header > #headerLogo
+	{
+		font-size: 2.8em;
+	}
 	header > nav
 	{
 		height:100%;

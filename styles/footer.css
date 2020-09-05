@@ -9,7 +9,7 @@ footer{
 	display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1em;
     font-family: oswaldregular;
     flex: 1 0 auto;
     cursor: default;
