@@ -1,4 +1,4 @@
-window.onscroll = function headerCheck() {
+function headerCheck() {
     if(window.scrollY>50)
     {
         document.getElementById('header').classList.add("active");
@@ -10,3 +10,5 @@ window.onscroll = function headerCheck() {
        document.getElementById('dropList').classList.remove("active");
     }
 }
+window.onscroll = headerCheck;
+window.onload = headerCheck;
