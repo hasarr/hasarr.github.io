@@ -55,6 +55,7 @@ main #contact
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	text-shadow: 2px 2px black;
 	flex-direction: column;
 }
@@ -63,6 +64,7 @@ main #contact a
 {
 	font-size: 2em;
 	text-decoration: none;
+
 	color:white;
 }
 h1,h2
@@ -212,6 +214,6 @@ main #servicesWebsite
 	}
 	.welcomeText
 	{
-		font-size: 4em; 
+		font-size: 4em;
 	}
 }
