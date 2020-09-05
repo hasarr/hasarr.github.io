@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
 	<link rel="icon" href="images/cardMiniLogo.png"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS on scroll Animation CSS-->
-
 </head>
 <body onload = "browserDetect()" onresize = "hideMobileMenu()">
 	<header id = "header">
@@ -163,21 +162,14 @@
 	</div>
 
 <!--- ______________________________SCRIPTS____________________________________-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- AOS Animation libraries-->
+<script src = "scripts/aosInitiate.js"></script> <!-- End of AOS animation libraries-->
 	<script type="text/javascript" src = "scripts/menu.js"></script>
 	<script type="text/javascript" src = "scripts/header.js"></script>
 	<script type="text/javascript" src = "scripts/browserDetect.js"></script>
 	<script type="text/javascript" src = " scripts/smooth-scroll.polyfills.min.js"></script><!-- Smooth link scrolling-->
 	<script type = "text/javascript" src = "scripts/scroll_properties.js"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- AOS Animation libraries-->
-	<script>
-	AOS.init({
-	    duration:1100,
-	    offset:100,
-	    once:false
 
-	});
-
-</script> <!-- End of AOS animation libraries-->
 
 
 </body>

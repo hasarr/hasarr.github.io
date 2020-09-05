@@ -28,7 +28,6 @@ main .images
 	justify-content: center;
 	cursor: default;
 	min-height:95vh;
-	transition: all .2s ease-in-out;
 }
 main #mainSite
 {
