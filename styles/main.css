@@ -85,7 +85,8 @@ main #servicesWebsite
 	background-image: url("../images/html_background.jpg");
 }
 
-.contactImages
+
+.contactImages, #contact h1
 {
 	width:100%;
 	text-align: center;
