@@ -27,7 +27,7 @@
 	<header id = "header">
 
 			<a href="#" id="headerLogo">HASARR-PC</a>
-			<img class="mobileMenuIcon" src="images/mobileMenuIcon.png"/>
+			<img class="mobileMenuIcon" src="images/mobileMenuIcon.png" onclick ="toggleMenu()"/>
 			<!--- ______________________________ DESKTOP NAVIGATION____________________________________-->
 			<nav>
 				<ul class = "desktopMenu">
@@ -55,24 +55,24 @@
 		<nav class = "mobileMenu" >
 			<ul>
 				<a href = "#mainSite">
-					<li class = "mobileListElement">STRONA GŁÓWNA</li>
+					<li class = "mobileListElement" onclick ="toggleMenu()">STRONA GŁÓWNA</li>
 				</a>
-				<li class = "mobileListElement" onclick="showDropMenu()"><a>USŁUGI</a></li>
+				<li class = "mobileListElement" onclick="toggleDropMenu()"><a>USŁUGI</a></li>
 
-					<ul id = "mobileDropList" style="display:none" >
+					<ul id = "mobileDropList" >
 					<a class = "menuHref" href = "#services">
-						<li class="mobileListElement" >SERWIS KOMPUTEROWY</li>
+						<li class="mobileListElement" onclick ="toggleMenu()">SERWIS KOMPUTEROWY</li>
 					</a>
 					<a class = "menuHref" href = "#servicesWebsite" >
-						<li class="mobileListElement">STRONY INTERNETOWE</li>
+						<li class="mobileListElement" onclick ="toggleMenu()">STRONY INTERNETOWE</li>
 					</a>
 					</ul>
 
 				<a href = "#about" >
-					<li class = "mobileListElement">O MNIE</li>
+					<li class = "mobileListElement" onclick ="toggleMenu()">O MNIE</li>
 				</a>
 				<a href = "#contact">
-					<li class = "mobileListElement">KONTAKT</li>
+					<li class = "mobileListElement" onclick ="toggleMenu()">KONTAKT</li>
 				</a>
 			</ul>
 		</nav>

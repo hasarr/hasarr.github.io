@@ -107,7 +107,7 @@ header  #headerLogo:hover
 	text-decoration: none;
 	color:white;
 }
-.mobileMenu ul .mobileListElement
+.mobileListElement
 {
 	box-sizing:border-box;
 	line-height: 200%;
@@ -116,7 +116,6 @@ header  #headerLogo:hover
 }
 .mobileMenu ul .mobileListElement:nth-child(2) a
 {
-
 	position: relative;
 	left:13px;
 }
@@ -135,11 +134,11 @@ header  #headerLogo:hover
 {
 	background-image: url("../images/downward_arrow_dark.png");
 }
-.mobileMenu ul .mobileListElement:hover a
+.mobileListElement:hover a
 {
 	color:black;
 }
-.mobileMenu ul .mobileListElement:hover
+.mobileListElement:hover
 {
 	background-color: white;
 	color:black;
@@ -147,8 +146,11 @@ header  #headerLogo:hover
 
 #mobileDropList
 {
-
-	display: flex;
+	display: none;
+}
+#mobileDropList.open
+{
+	display:flex;
 	flex-direction: column;
 }
 #mobileDropList li
