@@ -75,12 +75,13 @@ header  #headerLogo:hover
 	position: fixed;
 	opacity: .96;
 	transition: all .7s ease-out;
+	pointer-events: none;
 	-webkit-clip-path: circle(0);
 	clip-path: circle(0);
 }
 .mobileMenu.open
 {
-
+	pointer-events: all;
 	-webkit-clip-path: circle(100%);
 	clip-path: circle(100%);
 }
@@ -112,7 +113,7 @@ header  #headerLogo:hover
 	box-sizing:border-box;
 	line-height: 200%;
 	position: relative;
-	font-size:30px;
+	font-size:22px;
 }
 .mobileMenu ul .mobileListElement:nth-child(2) a
 {
