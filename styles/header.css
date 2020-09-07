@@ -80,7 +80,7 @@ header  #headerLogo:hover
 	display: flex;
 	align-items:flex-start;
 	opacity: .96;
-	transition: all .5s ease-out;
+	transition: all .6s ease-out;
 	pointer-events: none;
 	-webkit-clip-path: circle(0 at 100% -30%);
 	clip-path: circle(0 at 100% -30%);
