@@ -251,6 +251,7 @@ header > nav > .desktopMenu
 
 	}
 
+
 	/*-----------------------------------------------------------*/
 	/*----------------------DROP LIST-----------------------------*/
 	/*-----------------------------------------------------------*/
@@ -291,8 +292,7 @@ header > nav > .desktopMenu
 
 	#dropList.active
 	{
-		transition: all .3s ease-in-out;
-		background-color: #1f1f1f;
+		background-color: #202020;
 	}
 
 	.listElement:nth-child(2)::after
@@ -313,4 +313,12 @@ header > nav > .desktopMenu
 		background-image: url("../images/downward_arrow_dark.png");
 	}
 
+}
+
+@media screen and (max-width:192px)
+{
+	#headerLogo
+	{
+		display: none;
+	}
 }
