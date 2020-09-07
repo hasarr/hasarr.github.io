@@ -71,13 +71,20 @@ header  #headerLogo:hover
 	margin: 0;
 	background-color: #212121;
 	width: 100%;
+	top:0;
+	left:0;
+	right: 0;
+	bottom:0;
 	margin-top: 100px;
 	position: fixed;
+	display: flex;
+	align-items:flex-start;
 	opacity: .96;
 	transition: all .5s ease-out;
 	pointer-events: none;
 	-webkit-clip-path: circle(0 at 100% -30%);
 	clip-path: circle(0 at 100% -30%);
+	overflow: auto;
 }
 .mobileMenu.open
 {
@@ -94,7 +101,7 @@ header  #headerLogo:hover
 	font-family: oswaldregular, sans-serif;
 	color: white;
 	padding: 0;
-	margin: 0;
+	margin:0;
 	text-align:center;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -111,9 +118,8 @@ header  #headerLogo:hover
 .mobileListElement
 {
 	box-sizing:border-box;
-	line-height: 200%;
-	position: relative;
-	font-size:22px;
+	line-height: 100px;
+	font-size:25px;
 }
 .mobileMenu ul .mobileListElement:nth-child(2) a
 {
@@ -148,6 +154,7 @@ header  #headerLogo:hover
 #mobileDropList
 {
 	display: none;
+	background-color: #121212;
 }
 #mobileDropList.open
 {
@@ -156,8 +163,8 @@ header  #headerLogo:hover
 }
 #mobileDropList li
 {
-	font-size:0.6em;
-	background-color: #121212;
+	font-size:0.7em;
+	background-color: transparent;
 }
 #mobileDropList li:hover
 {
