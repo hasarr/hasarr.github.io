@@ -74,10 +74,10 @@ header  #headerLogo:hover
 	margin-top: 100px;
 	position: fixed;
 	opacity: .96;
-	transition: all .7s ease-out;
+	transition: all .5s ease-out;
 	pointer-events: none;
-	-webkit-clip-path: circle(0);
-	clip-path: circle(0);
+	-webkit-clip-path: circle(0 at 100% -30%);
+	clip-path: circle(0 at 100% -30%);
 }
 .mobileMenu.open
 {
