@@ -10,5 +10,6 @@ function headerCheck() {
        document.getElementById('dropList').classList.remove("active");
     }
 }
-window.onscroll = headerCheck;
+
 window.onload = headerCheck;
+window.onscroll = headerCheck;
