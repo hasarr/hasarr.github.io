@@ -210,7 +210,7 @@ header > nav > .desktopMenu
 	/*-----------------------------------------------------------*/
 	header > #headerLogo
 	{
-		font-size: 2.8em;
+		font-size: 2.4em;
 	}
 	header > nav
 	{
@@ -227,7 +227,7 @@ header > nav > .desktopMenu
 		color:white;
 		display:flex;
 		font-family: oswaldregular;
-		font-size: 2em;
+		font-size: 1.6em;
 		list-style-type: none;
 		position: relative;
 		justify-content: center;

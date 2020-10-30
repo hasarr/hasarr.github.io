@@ -1,202 +1,268 @@
 <!DOCTYPE html>
 <!-- VERSION 1.0.2.8-->
-<html lang = "pl-PL">
-<head>
-	<title>Serwis HASARR-PC Naprawa komputerów i tworzenie stron internetowych</title>
-	<meta charset="utf-8"/>
-	<meta name="description" content="Tworzenie i projektowanie stron internetowych www, naprawa komputerów osobistych i laptopów, serwis telefonów (smartfonów) Wolbrom, Olkusz, i okolice"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta content="user-scalable=no"/>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta property="og:title" content="Serwis komputerowy HASARR-PC - tworzenie stron i naprawa komputerów"/>
-	<meta property="og:site_name" content="Serwis komputerowy HASARR-PC">
-	<meta property="og:description" content="Tworzenie stron internetowych oraz serwis komputerów i telefonów Wolbrom, Olkusz i okolice."/>
-	<meta property="og:image" content="images/fb_logo.png"/>
-    <meta property="og:url" content="https://hasarr.github.io/"/>
-	<meta name="twitter:title" content="Serwis komputerowy HASARR-PC - tworzenie stron i naprawa komputerów "/>
-	<meta name="twitter:description" content=" Tworzenie stron internetowych oraz serwis komputerów i telefonów Wolbrom, Olkusz i okolice."/>
-	<meta name="twitter:image" content="images/fb_logo.png"/>
-	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:image:alt" content="HASARR-PC logo"/>
-	<link rel="stylesheet" type="text/css" href="styles/properties.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/header.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
-	<link rel="icon" href="images/cardMiniLogo.png"/>
-	<link rel="stylesheet" type="text/css" href="styles/properties.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/header.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
-	<link rel="icon" type="image/png" href="images/cardMiniLogo.png"/>
+<html lang="pl-PL">
+  <head>
+    <title>
+      Serwis HASARR-PC Naprawa komputerów i tworzenie stron internetowych
+    </title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Tworzenie i projektowanie stron internetowych www, naprawa komputerów osobistych i laptopów, serwis telefonów (smartfonów) Wolbrom, Olkusz, i okolice"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      property="og:title"
+      content="Serwis komputerowy HASARR-PC - tworzenie stron i naprawa komputerów"
+    />
+    <meta property="og:site_name" content="Serwis komputerowy HASARR-PC" />
+    <meta
+      property="og:description"
+      content="Tworzenie stron internetowych oraz serwis komputerów i telefonów Wolbrom, Olkusz i okolice."
+    />
+    <meta property="og:image" content="images/fb_logo.png" />
+    <meta property="og:url" content="https://hasarr.github.io/" />
+    <meta
+      name="twitter:title"
+      content="Serwis komputerowy HASARR-PC - tworzenie stron i naprawa komputerów "
+    />
+    <meta
+      name="twitter:description"
+      content=" Tworzenie stron internetowych oraz serwis komputerów i telefonów Wolbrom, Olkusz i okolice."
+    />
+    <meta name="twitter:image" content="images/fb_logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="HASARR-PC logo" />
+    <link rel="stylesheet" type="text/css" href="styles/properties.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="icon" href="images/cardMiniLogo.png" />
+    <link rel="stylesheet" type="text/css" href="styles/properties.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="icon" type="image/png" href="images/cardMiniLogo.png" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS on scroll Animation CSS-->
-</head>
-<script type="text/javascript" src = "scripts/header.js"></script>
-<body>
-	<header id = "header">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS on scroll Animation CSS-->
+  </head>
+  <script type="text/javascript" src="scripts/header.js"></script>
+  <body>
+    <header id="header">
+      <a href="" id="headerLogo">HASARR-PC</a>
+      <img
+        class="mobileMenuIcon"
+        src="images/mobileMenuIcon.png"
+        onclick="toggleMenu()"
+      />
+      <!--- ______________________________ DESKTOP NAVIGATION____________________________________-->
+      <nav>
+        <ul class="desktopMenu">
+          <a href="#mainSite"><li class="listElement">STRONA GŁÓWNA</li></a>
+          <li class="listElement">
+            USŁUGI
+            <ul id="dropList">
+              <a class="menuHref" href="#services">
+                <li class="dropListElement">SERWIS KOMPUTEROWY</li>
+              </a>
+              <a class="menuHref" href="#servicesWebsite">
+                <li class="dropListElement">STRONY INTERNETOWE</li>
+              </a>
+            </ul>
+          </li>
+          <a href="#about"><li class="listElement">O MNIE</li></a>
+          <a href="#contact"><li class="listElement">KONTAKT</li></a>
+        </ul>
+      </nav>
+      <!--- ______________________________END OF DESKTOP NAVIGATION____________________________________-->
+    </header>
 
-			<a href="" id="headerLogo">HASARR-PC</a>
-			<img class="mobileMenuIcon" src="images/mobileMenuIcon.png" onclick ="toggleMenu()"/>
-			<!--- ______________________________ DESKTOP NAVIGATION____________________________________-->
-			<nav>
+    <div id="content">
+      <!--- ______________________________ MOBILE NAVIGATION____________________________________-->
+      <nav class="mobileMenu">
+        <ul>
+          <a href="#mainSite">
+            <li class="mobileListElement" onclick="toggleMenu()">
+              STRONA GŁÓWNA
+            </li>
+          </a>
+          <li class="mobileListElement" onclick="toggleDropMenu()">
+            <a>USŁUGI</a>
+          </li>
 
-				<ul class = "desktopMenu">
-					<a href = "#mainSite"><li class="listElement">STRONA GŁÓWNA</li></a>
-					<li class="listElement">USŁUGI
-						<ul id = "dropList">
-						<a class = "menuHref" href = "#services">
-							<li class="dropListElement" >SERWIS KOMPUTEROWY</li>
-						</a>
-						<a class = "menuHref" href = "#servicesWebsite">
-							<li class="dropListElement">STRONY INTERNETOWE</li>
-						</a>
-						</ul>
-					</li>
-					<a  href = "#about"><li class="listElement">O MNIE</li></a>
-					<a  href = "#contact"><li class="listElement">KONTAKT</li></a>
-				</ul>
-			</nav>
-			<!--- ______________________________END OF DESKTOP NAVIGATION____________________________________-->
+          <ul id="mobileDropList">
+            <a class="menuHref" href="#services">
+              <li class="mobileListElement" onclick="toggleMenu()">
+                SERWIS KOMPUTEROWY
+              </li>
+            </a>
+            <a class="menuHref" href="#servicesWebsite">
+              <li class="mobileListElement" onclick="toggleMenu()">
+                STRONY INTERNETOWE
+              </li>
+            </a>
+          </ul>
 
-	</header>
+          <a href="#about">
+            <li class="mobileListElement" onclick="toggleMenu()">O MNIE</li>
+          </a>
+          <a href="#contact">
+            <li class="mobileListElement" onclick="toggleMenu()">KONTAKT</li>
+          </a>
+        </ul>
+      </nav>
+      <!--- ______________________________ END OF MOBILE NAVIGATION____________________________________-->
+      <main>
+        <section id="mainSite" class="images">
+          <h1 class="welcomeText" data-aos="zoom-in">
+            Witaj na stronie serwisu <span class="primaryColor">HASARR-PC</span>
+          </h1>
+          <p class="textDescription" data-aos="fade-left">
+            Zajmuję się <br /><span class="secondColor"
+              >naprawą sprzętu komputerowego</span
+            ><br />
+            oraz
+            <br /><span class="secondColor"
+              >tworzeniem stron internetowych</span
+            >
+            na zamówienie<br /><br />
+          </p>
+          <a href="#services" id="goDown"
+            >Zejdź niżej aby dowiedzieć się więcej
+          </a>
+        </section>
 
-	<div id="content">
-		<!--- ______________________________ MOBILE NAVIGATION____________________________________-->
-		<nav class = "mobileMenu" >
-			<ul>
-				<a href = "#mainSite">
-					<li class = "mobileListElement" onclick ="toggleMenu()">STRONA GŁÓWNA</li>
-				</a>
-				<li class = "mobileListElement" onclick="toggleDropMenu()"><a>USŁUGI</a></li>
+        <section id="services" class="images">
+          <h1 class="welcomeText" data-aos="fade-left">
+            Oferuję <span class="primaryColor">kompleksową</span>
+            naprawę komputerów i laptopów
+          </h1>
 
-					<ul id = "mobileDropList" >
-					<a class = "menuHref" href = "#services">
-						<li class="mobileListElement" onclick ="toggleMenu()">SERWIS KOMPUTEROWY</li>
-					</a>
-					<a class = "menuHref" href = "#servicesWebsite" >
-						<li class="mobileListElement" onclick ="toggleMenu()">STRONY INTERNETOWE</li>
-					</a>
-					</ul>
+          <span class="textDescription">
+            <ul id="servicesList" data-aos="fade-right">
+              <li>Doradztwo w sprawie doboru sprzętu</li>
+              <li>Składanie zestawu komputerowego</li>
+              <li>Wymiana i montaż podzespołów komputerowych</li>
+              <li>Usuwanie wirusów</li>
+              <li>Format/instalacja systemu</li>
+              <li>Czyszczenie i serwis komputera/laptopa</li>
+              <li>Wymiana klawiatur/ekranów w laptopie</li>
+              <li>Konfiguracja urządzeń sieciowych</li>
+              <li>Diagnoza oraz naprawa problemu</li>
+              <br />
+              <a href="#servicesWebsite"><li>Oraz wiele więcej...</li></a>
+            </ul>
+          </span>
+        </section>
 
-				<a href = "#about" >
-					<li class = "mobileListElement" onclick ="toggleMenu()">O MNIE</li>
-				</a>
-				<a href = "#contact">
-					<li class = "mobileListElement" onclick ="toggleMenu()">KONTAKT</li>
-				</a>
-			</ul>
-		</nav>
-		<!--- ______________________________ END OF MOBILE NAVIGATION____________________________________-->
-		<main>
+        <section id="servicesWebsite" class="images">
+          <h1 class="welcomeText" data-aos="fade-left">
+            Potrzebujesz
+            <span class="primaryColor">strony internetowej</span> dla twojego
+            biznesu?
+          </h1>
+          <p class="textDescription" data-aos="fade-right">
+            To nie problem, stworzę dla Ciebie
+            <span class="secondColor">funkcjonalną</span> i
+            <span class="secondColor">responsywną</span> witrynę internetową na
+            <span class="secondColor">każdy</span> typ urządzenia<br />
+            Wystarczy, że podczas zamawiania strony opiszesz ogólny koncept
+            witryny oraz jej typ
+            <br />
+            Jeśli <span class="secondColor">nie wiesz</span> jak ma wyglądać
+            twoja witryna,
+            <span class="secondColor">sam ją zaprojektuję</span> i
+            <span class="secondColor"> oddam do oceny </span>
+            <br /><br />
+            Otrzymasz swoją własną
+            <span class="secondColor">domenę internetową </span>oraz gotowy do
+            zarządzania <span class="secondColor"> serwer hostingowy</span> na
+            start (<span class="secondColor">miesiąc za darmo</span>)
+            <br /><br />
+            <span class="secondColor">Cena </span>jest ustalana indywidualnie,
+            oferuję <span class="secondColor">konkurencyjne stawki</span> już
+            <span class="secondColor">od 400zł </span> w zależności od stopnia
+            skomplikowania witryny <br /><br />
+            Jesteś zainteresowany? Przejdź do zakładki
+            <span class="secondColor">KONTAKT</span> i podaj szczegóły projektu
+            <br /><br />
+            <a class="contactHref" href="#about">O mnie</a>
+          </p>
+        </section>
 
-			<section id = "mainSite" class = "images">
-			<h1 class = "welcomeText" data-aos="zoom-in">Witaj na stronie serwisu <span class = "primaryColor">HASARR-PC</span></h1>
-			<p class = "textDescription" data-aos="fade-left">
-				Zajmuję się <br/><span class = "secondColor">naprawą sprzętu komputerowego</span><br/>
-				oraz
-				<br/><span class = "secondColor" >tworzeniem stron internetowych</span> na zamówienie<br/><br/>
+        <section id="about" class="images">
+          <h1 class="welcomeText" data-aos="fade-left">
+            Jestem pasjonatem <span class="primaryColor">informatyki</span> od
+            lat dziecięcych
+          </h1>
+          <p class="textDescription" data-aos="fade-right">
+            Skończyłem technikum informatyczne, a aktualnie studiuję
+            informatykę. Ciągle uczę się nowych technologii i rozwijam swoje
+            umiejętności. Prowadzę swój serwis już od 2018 roku w Wolbromiu i
+            okolicy. Zawsze dbam o szczegóły i staram się efektywnie wykonywać
+            swoją pracę. Moje zainteresowania to szeroko pojęta informatyka,
+            głównie tworzenie stron internetowych, a zarówno hardware. Jestem
+            otwarty na propozycje i nie boję się wyzwań
+            <br /><a class="contactHref" href="#contact" class="secondColor"
+              >Kontakt</a
+            >
+          </p>
+        </section>
 
-			</p><a href = "#services" id = "goDown" >Zejdź niżej aby dowiedzieć się więcej </a>
-			</section>
+        <section id="contact">
+          <h1 data-aos="zoom-in">SKONTAKTUJ SIĘ ZE MNĄ</h1>
+          <p></p>
+          <div class="contactImages">
+            <a href="tel:735-469-422">
+              <img
+                src="images/contact_icon.png"
+                data-aos="fade-left"
+                data-aos-offset="100"
+              />
+            </a>
+            <a href="tel:735-469-422">735 469 422</a>
+          </div>
 
+          <p></p>
+          <div class="contactImages">
+            <a href="mailto: serwiswolbrom@gmail.com">
+              <img
+                src="images/mail_icon.png"
+                data-aos="fade-right"
+                data-aos-offset="100"
+              />
+            </a>
+            <a href="mailto: serwiswolbrom@gmail.com"
+              >serwiswolbrom@gmail.com</a
+            >
+          </div>
 
-			<section id = "services" class = "images">
-			<h1 class = "welcomeText" data-aos="fade-left">
-				Oferuję <span class = "primaryColor">kompleksową</span>
-				naprawę komputerów i laptopów
-			</h1>
+          <p></p>
+        </section>
+      </main>
 
-			<span class = "textDescription" >
-				<ul id = "servicesList" data-aos="fade-right">
-					<li>Doradztwo w sprawie doboru sprzętu</li>
-					<li>Składanie zestawu komputerowego</li>
-					<li>Wymiana i montaż podzespołów komputerowych</li>
-					<li>Usuwanie wirusów</li>
-					<li>Format/instalacja systemu</li>
-					<li>Czyszczenie i serwis komputera/laptopa</li>
-					<li>Wymiana klawiatur/ekranów w laptopie</li>
-					<li>Konfiguracja urządzeń sieciowych</li>
-					<li>Diagnoza oraz naprawa problemu</li><br/>
-					<a href = "#servicesWebsite"><li>Oraz wiele więcej...</li></a>
-				</ul>
-			</span>
-			</section>
+      <footer>
+        Copyright © Przemysław Goncerz 2020 <br />All rights reserved
+      </footer>
+    </div>
 
-
-			<section id = "servicesWebsite" class = "images">
-			<h1 class = "welcomeText" data-aos="fade-left">Potrzebujesz <span class = "primaryColor">strony internetowej</span> dla twojego biznesu?</h1>
-			<p class = "textDescription" data-aos="fade-right">
-				To nie problem, stworzę dla Ciebie <span class = "secondColor">funkcjonalną</span>
-			    i <span class = "secondColor">responsywną</span> witrynę internetową na
-				<span class = "secondColor">każdy</span> typ urządzenia<br/>
-				Wystarczy, że podczas zamawiania strony opiszesz ogólny koncept witryny oraz jej typ
-				<br/>
-				Jeśli <span class = "secondColor">nie wiesz</span> jak ma wyglądać twoja witryna, <span class = "secondColor">sam ją zaprojektuję</span> i
-				<span class = "secondColor"> oddam do oceny </span>
-				<br/><br/>
-				Otrzymasz swoją własną <span class = "secondColor">domenę internetową </span>oraz gotowy do zarządzania
-				<span class = "secondColor"> serwer hostingowy</span> na start
-				(<span class = "secondColor">miesiąc za darmo</span>)
-				<br/><br/>
-				<span class = "secondColor">Cena </span>jest ustalana indywidualnie, oferuję
-				 <span class = "secondColor">konkurencyjne stawki</span> już <span class = "secondColor">od 400zł
-				 </span> w zależności od stopnia skomplikowania witryny
-				 <br/><br/>
-				 Jesteś zainteresowany? Przejdź do zakładki <span class = "secondColor">KONTAKT</span> i podaj szczegóły projektu
-				 <br/><br/>
-				 <a class = "contactHref" href="#about">O mnie</a>
-			</p>
-			</section>
-
-			<section id = "about" class = "images">
-			<h1 class = "welcomeText" data-aos="fade-left">Jestem pasjonatem <span class = "primaryColor">informatyki</span> od lat dziecięcych</h1>
-			<p class = "textDescription" data-aos="fade-right">
-				Skończyłem technikum informatyczne, a aktualnie studiuję informatykę.
-				Ciągle uczę się nowych technologii i rozwijam swoje umiejętności. Prowadzę swój serwis już od 2018 roku w Wolbromiu i okolicy.
-				Zawsze dbam o szczegóły i staram się efektywnie wykonywać swoją pracę. Moje zainteresowania to szeroko pojęta informatyka, głównie tworzenie stron
-				internetowych, a zarówno hardware. Jestem otwarty na propozycje i nie boję się wyzwań
-				 <br/><a class = "contactHref" href="#contact" class = "secondColor">Kontakt</a>
-			</p>
-			</section>
-
-			<section id="contact">
-				<h1 data-aos="zoom-in">SKONTAKTUJ SIĘ ZE MNĄ</h1>
-				<p></p>
-				<div class="contactImages">
-					<a href = "tel:735-469-422">
-						<img src = "images/contact_icon.png" data-aos="fade-left"  data-aos-offset="100"/>
-					</a>
-					<a href = "tel:735-469-422">735 469 422</a>
-				</div>
-
-				<p></p>
-				<div class="contactImages">
-				<a href = "mailto: serwiswolbrom@gmail.com">
-					<img src = "images/mail_icon.png" data-aos="fade-right" data-aos-offset="100"/>
-				</a>
-				<a href = "mailto: serwiswolbrom@gmail.com">serwiswolbrom@gmail.com</a>
-				</div>
-
-				<p></p>
-			</section>
-
-		</main>
-
-		<footer>Copyright © Przemysław Goncerz 2020 <br/>All rights reserved </footer>
-	</div>
-
-<!--- ______________________________SCRIPTS____________________________________-->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- AOS Animation libraries-->
-<script src = "scripts/aosInitiate.js"></script> <!-- End of AOS animation libraries-->
-<script type="text/javascript" src = "scripts/menu.js"></script>
-<script type="text/javascript" src = "scripts/browserDetect.js"></script>
-<script type="text/javascript" src = " scripts/smooth-scroll.polyfills.min.js"></script>
-<!-- Smooth link scrolling-->
-<script type = "text/javascript" src = "scripts/scroll_properties.js"></script>
-
-
-
-</body>
+    <!--- ______________________________SCRIPTS____________________________________-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- AOS Animation libraries-->
+    <script src="scripts/aosInitiate.js"></script>
+    <!-- End of AOS animation libraries-->
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/browserDetect.js"></script>
+    <script
+      type="text/javascript"
+      src=" scripts/smooth-scroll.polyfills.min.js"
+    ></script>
+    <!-- Smooth link scrolling-->
+    <script type="text/javascript" src="scripts/scroll_properties.js"></script>
+  </body>
 </html>
