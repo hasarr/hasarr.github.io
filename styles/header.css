@@ -235,7 +235,7 @@ header > nav > .desktopMenu
 	}
 	header >nav > .desktopMenu > a
 	{
-		height:100%;
+		height:100px;
 		text-decoration: none;
 		color:white;
 	}
@@ -244,7 +244,7 @@ header > nav > .desktopMenu
 		display: flex;
 		align-items: center;
 		clear: both;
-		height:72px;
+		height:65px;
 		padding: 20px;
 		cursor:pointer;
 		justify-content: center;
@@ -266,7 +266,7 @@ header > nav > .desktopMenu
 	#dropList
 	{
 		position: absolute;
-		top:132px;
+		top:125px;
 		text-align: center;
 		background-color: #696969;
 	}
